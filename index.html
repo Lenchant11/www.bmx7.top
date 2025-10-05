@@ -10,6 +10,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 	<link rel="stylesheet" href="style.css">
     
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17512015354"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-17512015354');
+    </script>
+    <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.open(url, '_blank');
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-17512015354/euTCCO_x6aYbEPrLsJ5B',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>
 </head>
 <body>
     <!-- Header -->
@@ -25,7 +47,7 @@
                         <li><a href="#benefits" data-en="Benefits" data-cn="核心优势">Benefits</a></li>
                         <li><a href="#methods" data-en="Methods" data-cn="方法策略">Methods</a></li>
                         <li><a href="#results" data-en="Results" data-cn="成功案例">Results</a></li>
-                        <li><a href="#contact" class="nav-cta" data-en="Get Strategy" data-cn="获取策略">Get Strategy</a></li>
+                        <li><a href="#contact" class="nav-cta" data-en="Get More Traffic" data-cn="获取更多流量">Get More Traffic</a></li>
                     </ul>
                 </nav>
                 <div class="lang-switcher">
@@ -112,35 +134,42 @@
                     </div>
                     
                     <div class="cta-buttons">
-                        <button class="btn btn-primary" data-en="Get Free Audit" data-cn="免费获取账户分析">Get Free Audit</button>
-                        <button class="btn btn-secondary" data-en="View Case Studies" data-cn="查看成功案例">View Case Studies</button>
+                        <button class="btn btn-primary" onclick="openWhatsApp('hero_consult')" data-en="Get Instant Traffic Boost" data-cn="立即获取流量提升">Get Instant Traffic Boost</button>
+                        <button class="btn btn-secondary" onclick="openWhatsApp('hero_cases')" data-en="See Real Results Now" data-cn="立即查看真实效果">See Real Results Now</button>
                     </div>
                 </div>
                 
                 <div class="hero-right">
                     <div class="floating-card floating">
-                        <h3 class="form-title" data-en="Get Your Free Growth Audit" data-cn="获取免费增长分析">Get Your Free Growth Audit</h3>
+                        <h3 class="form-title" data-en="Get Your Growth Strategy Now" data-cn="立即获取增长策略">Get Your Growth Strategy Now</h3>
                         <form id="audit-form">
                             <div class="form-group">
-                                <input type="text" placeholder="Your Name" data-en-placeholder="Your Name" data-cn-placeholder="您的姓名" required>
+                                <input type="text" id="name" placeholder="Your Name" data-en-placeholder="Your Name" data-cn-placeholder="您的姓名" required>
+                                <div class="error-message" id="name-error"></div>
                             </div>
                             <div class="form-group">
-                                <input type="email" placeholder="Email Address" data-en-placeholder="Email Address" data-cn-placeholder="电子邮箱" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" placeholder="@username" data-en-placeholder="@username" data-cn-placeholder="@用户名" required>
-                            </div>
-                            <div class="form-group">
-                                <select data-en-placeholder="Primary Platform" data-cn-placeholder="主要平台">
-                                    <option value="" data-en="Primary Platform" data-cn="主要平台">Primary Platform</option>
+                                <select id="platform" data-en-placeholder="Primary Platform" data-cn-placeholder="主要平台" required>
+                                    <option value="" data-en="Select Your Platform" data-cn="选择您的平台">Select Your Platform</option>
                                     <option value="tiktok" data-en="TikTok" data-cn="TikTok">TikTok</option>
                                     <option value="facebook" data-en="Facebook" data-cn="Facebook">Facebook</option>
                                     <option value="instagram" data-en="Instagram" data-cn="Instagram">Instagram</option>
                                     <option value="twitter" data-en="Twitter" data-cn="Twitter">Twitter</option>
                                     <option value="other" data-en="Other" data-cn="其他">Other</option>
                                 </select>
+                                <div class="error-message" id="platform-error"></div>
                             </div>
-                            <button type="submit" class="btn btn-primary" style="width: 100%;" data-en="Get Free Audit" data-cn="免费获取分析">Get Free Audit</button>
+                            <div class="form-group">
+                                <input type="text" id="username" placeholder="@username" data-en-placeholder="@username" data-cn-placeholder="@用户名" required>
+                                <div class="error-message" id="username-error"></div>
+                            </div>
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="privacy-policy" required>
+                                <label for="privacy-policy">
+                                    <span data-en="I agree to the Privacy Policy" data-cn="我同意隐私政策">I agree to the Privacy Policy</span>
+                                </label>
+                                <div class="error-message" id="privacy-error"></div>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;" data-en="Get My Strategy Now" data-cn="立即获取我的策略">Get My Strategy Now</button>
                         </form>
                         <div class="guarantee">
                             <i class="fas fa-shield-alt"></i>
@@ -151,7 +180,7 @@
             </div>
         </div>
     </section>
-	
+
     <!-- Platform Features Section -->
     <section class="platform-features">
         <div class="container">
@@ -281,7 +310,7 @@
             </div>
             <h2 class="security-title" data-en="Your Account Security Is Our Priority" data-cn="您的账户安全是我们的首要任务">Your Account Security Is Our Priority</h2>
             <p class="security-description" data-en="We've developed our tools and methods to work without requiring your account passwords or sensitive information. You maintain full control of your accounts while benefiting from our expertise." data-cn="我们开发的工具和方法无需您的账户密码或敏感信息即可工作。在受益于我们专业知识的同时，您完全掌控自己的账户。">We've developed our tools and methods to work without requiring your account passwords or sensitive information. You maintain full control of your accounts while benefiting from our expertise.</p>
-            <button class="btn btn-primary" data-en="Learn About Our Security Approach" data-cn="了解我们的安全方法">Learn About Our Security Approach</button>
+            <button class="btn btn-primary" onclick="openWhatsApp('security_consult')" data-en="Get Secure Growth Strategy" data-cn="获取安全增长策略">Get Secure Growth Strategy</button>
         </div>
     </section>
 
@@ -467,13 +496,13 @@
     <!-- CTA Section -->
     <section id="contact" class="cta-section">
         <div class="container">
-            <h2 class="cta-title" data-en="Ready to Transform Your Social Presence?" data-cn="准备好改变您的社交媒体影响力了吗？">Ready to Transform Your Social Presence?</h2>
-            <p class="cta-subtitle" data-en="Book a free consultation with our growth experts. We'll analyze your account and provide personalized strategy recommendations." data-cn="与我们的增长专家预约免费咨询。我们将分析您的账户并提供个性化策略建议。">Book a free consultation with our growth experts. We'll analyze your account and provide personalized strategy recommendations.</p>
+            <h2 class="cta-title" data-en="Ready to Explode Your Social Traffic?" data-cn="准备好引爆您的社交流量了吗？">Ready to Explode Your Social Traffic?</h2>
+            <p class="cta-subtitle" data-en="Book a strategy session with our growth experts. We'll analyze your account and create a custom plan to skyrocket your visibility." data-cn="与我们的增长专家预约策略会议。我们将分析您的账户并制定定制计划，让您的曝光度飙升。">Book a strategy session with our growth experts. We'll analyze your account and create a custom plan to skyrocket your visibility.</p>
             <div class="cta-buttons">
-                <button class="btn btn-light" data-en="Book Free Consultation" data-cn="预约免费咨询">Book Free Consultation</button>
-                <button class="btn btn-secondary" data-en="Download Case Studies" data-cn="下载案例研究">Download Case Studies</button>
+                <button class="btn btn-light" onclick="openWhatsApp('bottom_consult')" data-en="Book Strategy Session Now" data-cn="立即预约策略会议">Book Strategy Session Now</button>
+                <button class="btn btn-secondary" onclick="openWhatsApp('bottom_cases')" data-en="See Explosive Results" data-cn="查看爆发式效果">See Explosive Results</button>
             </div>
-            <p style="margin-top: 20px; color: rgba(255, 255, 255, 0.7); font-size: 14px;" data-en="Limited time: First 20 consultations include a free account audit report" data-cn="限时优惠：前20名咨询者将获得免费账户分析报告">Limited time: First 20 consultations include a free account audit report</p>
+            <p style="margin-top: 20px; color: rgba(255, 255, 255, 0.7); font-size: 14px;" data-en="Limited spots available - Book your session before they're gone!" data-cn="名额有限 - 在名额满之前立即预约！">Limited spots available - Book your session before they're gone!</p>
         </div>
     </section>
 
@@ -527,46 +556,75 @@
         </div>
     </footer>
 
-    <!-- Modal for success and popup -->
+    <!-- Mobile Floating CTA Button -->
+    <div class="mobile-floating-cta" id="mobileFloatingCTA">
+        <button class="btn btn-primary floating-cta-btn" onclick="openWhatsApp('mobile_floating')">
+            <i class="fas fa-bolt"></i>
+            <span data-en="Get More Traffic Now" data-cn="立即获取更多流量">Get More Traffic Now</span>
+        </button>
+    </div>
+
+    <!-- Success Modal -->
     <div class="modal" id="success-modal">
         <div class="modal-content">
-            <div class="modal-icon">
-                <i class="fas fa-gift"></i>
+            <div class="modal-icon success">
+                <i class="fas fa-check-circle"></i>
             </div>
-            <h3 class="modal-title" data-en="Congratulations!" data-cn="恭喜您！">Congratulations!</h3>
-            <p class="modal-text" data-en="You have successfully submitted. Click the button now to immediately experience our 10% traffic growth service for free." data-cn="您已成功提交。现在立即点击按钮免费体验我们10%流量增长服务。">You have successfully submitted. Click the button now to immediately experience our 10% traffic growth service for free.</p>
+            <h3 class="modal-title" data-en="Strategy Request Received!" data-cn="策略请求已接收！">Strategy Request Received!</h3>
+            <p class="modal-text" data-en="Click the continue button to contact our support team and get more targeted traffic for your account." data-cn="点击继续按钮联系客服支持，为您的账户获取更多精准流量。">Click the continue button to contact our support team and get more targeted traffic for your account.</p>
             <div class="modal-buttons">
-                <button class="btn btn-primary" id="whatsapp-btn" data-en="Claim Free Service" data-cn="领取免费服务">Claim Free Service</button>
-                <button class="btn btn-secondary" id="close-modal" data-en="Maybe Later" data-cn="稍后再说">Maybe Later</button>
+                <button class="btn btn-primary" id="whatsapp-btn" onclick="reportGoogleConversion()" data-en="Continue to Get Traffic" data-cn="继续获取流量">Continue to Get Traffic</button>
+                <button class="btn btn-secondary" id="close-modal" data-en="Close" data-cn="关闭">Close</button>
             </div>
         </div>
     </div>
 
     <script>
-        // Language management
+        // WhatsApp配置
+        const WHATSAPP_NUMBER = '447754979958';
+        
+        // 语言管理
         let currentLang = 'en';
         const formSubmitted = false;
         let popupTimer;
 
-        // Detect user language preference
+        // 打开WhatsApp（不报告事件）
+        function openWhatsApp(source) {
+            const message = currentLang === 'en' 
+                ? "Hello! I'm interested in getting more social media traffic and exposure. Can you help me?" 
+                : "您好！我对获取更多社交流量和曝光感兴趣。您能帮助我吗？";
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+            
+            // 直接打开WhatsApp，不报告事件
+            window.open(whatsappUrl, '_blank');
+        }
+
+        // 报告Google转化事件（仅在成功模态框的继续按钮使用）
+        function reportGoogleConversion() {
+            const message = currentLang === 'en' 
+                ? "Hello! I've submitted the form and would like to get more targeted traffic for my account." 
+                : "您好！我已提交表单，希望为我的账户获取更多精准流量。";
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+            
+            // 使用官方提供的转化报告函数
+            gtag_report_conversion(whatsappUrl);
+        }
+
+        // 检测用户语言偏好
         function detectUserLanguage() {
-            // Check browser language
             const browserLang = navigator.language || navigator.userLanguage;
             if (browserLang.startsWith('zh')) {
                 return 'cn';
             }
-            
-            // In a real implementation, you would also check IP location here
-            // For demo purposes, we'll use browser language only
-            
             return 'en';
         }
 
-        // Switch language
+        // 切换语言
         function switchLanguage(lang) {
             currentLang = lang;
             
-            // Update all elements with data attributes
             document.querySelectorAll('[data-en], [data-cn]').forEach(element => {
                 if (element.hasAttribute(`data-${lang}`)) {
                     const text = element.getAttribute(`data-${lang}`);
@@ -580,10 +638,8 @@
                 }
             });
             
-            // Update current language indicator
             document.getElementById('current-lang').textContent = lang === 'en' ? 'EN' : '中文';
             
-            // Update active language option
             document.querySelectorAll('.lang-option').forEach(option => {
                 if (option.getAttribute('data-lang') === lang) {
                     option.classList.add('active');
@@ -592,7 +648,6 @@
                 }
             });
             
-            // Update form select placeholder
             const select = document.querySelector('select');
             if (select) {
                 const placeholderOption = select.querySelector('option[value=""]');
@@ -601,25 +656,73 @@
                 }
             }
             
-            // Store language preference
             localStorage.setItem('preferredLang', lang);
         }
 
-        // Initialize language based on detection
+        // 表单验证
+        function validateForm() {
+            let isValid = true;
+            
+            // 清除之前的错误信息
+            document.querySelectorAll('.error-message').forEach(error => {
+                error.textContent = '';
+            });
+            
+            // 验证姓名
+            const name = document.getElementById('name').value.trim();
+            if (!name) {
+                document.getElementById('name-error').textContent = 
+                    currentLang === 'en' ? 'Please enter your name' : '请输入您的姓名';
+                isValid = false;
+            }
+            
+            // 验证平台
+            const platform = document.getElementById('platform').value;
+            if (!platform) {
+                document.getElementById('platform-error').textContent = 
+                    currentLang === 'en' ? 'Please select your platform' : '请选择您的平台';
+                isValid = false;
+            }
+            
+            // 验证用户名
+            const username = document.getElementById('username').value.trim();
+            if (!username) {
+                document.getElementById('username-error').textContent = 
+                    currentLang === 'en' ? 'Please enter your username' : '请输入您的用户名';
+                isValid = false;
+            }
+            
+            // 验证隐私政策
+            const privacyChecked = document.getElementById('privacy-policy').checked;
+            if (!privacyChecked) {
+                document.getElementById('privacy-error').textContent = 
+                    currentLang === 'en' ? 'Please agree to the privacy policy' : '请同意隐私政策';
+                isValid = false;
+            }
+            
+            return isValid;
+        }
+
+        // 模拟表单提交
+        function submitForm() {
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    resolve(true);
+                }, 1000);
+            });
+        }
+
         document.addEventListener('DOMContentLoaded', function() {
-            // Check for stored preference first
+            // 语言初始化
             const storedLang = localStorage.getItem('preferredLang');
             if (storedLang) {
                 currentLang = storedLang;
             } else {
-                // Auto-detect language
                 currentLang = detectUserLanguage();
             }
-            
-            // Apply language
             switchLanguage(currentLang);
             
-            // Language switcher functionality
+            // 语言切换器功能
             document.querySelector('.lang-btn').addEventListener('click', function() {
                 document.querySelector('.lang-options').classList.toggle('show');
             });
@@ -632,54 +735,81 @@
                 });
             });
             
-            // Close language dropdown when clicking outside
             document.addEventListener('click', function(e) {
                 if (!e.target.closest('.lang-switcher')) {
                     document.querySelector('.lang-options').classList.remove('show');
                 }
             });
 
-            // Form submission
-            document.getElementById('audit-form').addEventListener('submit', function(e) {
+            // 表单提交
+            document.getElementById('audit-form').addEventListener('submit', async function(e) {
                 e.preventDefault();
-                formSubmitted = true;
                 
-                // Show success modal
-                document.getElementById('success-modal').classList.add('show');
+                if (!validateForm()) {
+                    return;
+                }
+                
+                // 显示加载状态
+                const submitBtn = this.querySelector('button[type="submit"]');
+                const originalText = submitBtn.textContent;
+                submitBtn.innerHTML = currentLang === 'en' ? 
+                    '<i class="fas fa-spinner fa-spin"></i> Submitting...' : 
+                    '<i class="fas fa-spinner fa-spin"></i> 提交中...';
+                submitBtn.disabled = true;
+                
+                try {
+                    // 模拟提交
+                    await submitForm();
+                    
+                    // 显示成功模态框
+                    document.getElementById('success-modal').classList.add('show');
+                    
+                } catch (error) {
+                    console.error('Form submission error:', error);
+                    alert(currentLang === 'en' ? 
+                        'Submission failed. Please try again.' : 
+                        '提交失败，请重试。');
+                } finally {
+                    // 恢复按钮状态
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                }
             });
             
-            // Modal functionality
+            // 模态框功能
             document.getElementById('close-modal').addEventListener('click', function() {
                 document.getElementById('success-modal').classList.remove('show');
             });
             
-            document.getElementById('whatsapp-btn').addEventListener('click', function() {
-                // Redirect to WhatsApp
-                const message = currentLang === 'en' 
-                    ? "Hello! I'd like to claim my free 10% traffic growth service." 
-                    : "您好！我想领取免费的10%流量增长服务。";
-                const encodedMessage = encodeURIComponent(message);
-                window.open(`https://wa.me/1234567890?text=${encodedMessage}`, '_blank');
-                
-                // Close modal
-                document.getElementById('success-modal').classList.remove('show');
-            });
-            
-            // Close modal when clicking outside
             document.getElementById('success-modal').addEventListener('click', function(e) {
                 if (e.target === this) {
                     this.classList.remove('show');
                 }
             });
             
-            // Set timer for popup after 1 minute
+            // 1分钟后自动弹窗
             popupTimer = setTimeout(function() {
                 if (!formSubmitted) {
                     document.getElementById('success-modal').classList.add('show');
                 }
-            }, 60000); // 1 minute
+            }, 60000);
             
-            // Scroll animations
+            // 移动端悬浮按钮显示逻辑
+            function handleScroll() {
+                const scrollPosition = window.scrollY;
+                const windowHeight = window.innerHeight;
+                const documentHeight = document.documentElement.scrollHeight;
+                
+                if (scrollPosition + windowHeight >= documentHeight - 100) {
+                    document.getElementById('mobileFloatingCTA').classList.add('show');
+                } else {
+                    document.getElementById('mobileFloatingCTA').classList.remove('show');
+                }
+            }
+            
+            window.addEventListener('scroll', handleScroll);
+            
+            // 滚动动画
             const fadeElems = document.querySelectorAll('.method-card, .result-card, .testimonial-card, .benefit-card, .feature');
             
             const fadeInOnScroll = function() {
@@ -693,7 +823,6 @@
                 }
             };
             
-            // Initialize element states
             for (let i = 0; i < fadeElems.length; i++) {
                 fadeElems[i].style.opacity = 0;
                 fadeElems[i].style.transform = 'translateY(20px)';
@@ -702,15 +831,6 @@
             
             window.addEventListener('scroll', fadeInOnScroll);
             fadeInOnScroll();
-            
-            // Button click handlers
-            document.querySelectorAll('.btn-primary, .btn-light').forEach(btn => {
-                if (!btn.id) { // Exclude modal buttons
-                    btn.addEventListener('click', function() {
-                        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-                    });
-                }
-            });
         });
     </script>
 </body>
