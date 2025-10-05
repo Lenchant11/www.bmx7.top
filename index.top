@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Growth Academy | Increase Exposure, Followers & Business Leads</title>
+    <meta name="description" content="Grow your TikTok, Facebook, Instagram & Twitter presence without sharing passwords. Our tools & methods help you get more exposure, targeted followers, and business opportunities.">
+    <meta name="keywords" content="social media growth, TikTok followers, Instagram growth, Facebook exposure, Twitter followers, social media marketing">
+    <meta name="author" content="Social Growth Academy">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">SG</div>
+                    <div class="logo-text">SocialGrowth</div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#benefits" data-en="Benefits" data-cn="核心优势">Benefits</a></li>
+                        <li><a href="#methods" data-en="Methods" data-cn="方法策略">Methods</a></li>
+                        <li><a href="#results" data-en="Results" data-cn="成功案例">Results</a></li>
+                        <li><a href="#contact" class="nav-cta" data-en="Get Strategy" data-cn="获取策略">Get Strategy</a></li>
+                    </ul>
+                </nav>
+                <div class="lang-switcher">
+                    <button class="lang-btn">
+                        <i class="fas fa-globe"></i>
+                        <span id="current-lang">EN</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="lang-options">
+                        <div class="lang-option active" data-lang="en">
+                            <i class="fas fa-check"></i>
+                            English
+                        </div>
+                        <div class="lang-option" data-lang="cn">
+                            简体中文
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-header">
+                <span class="hero-badge" data-en="No Password Sharing Required" data-cn="无需共享密码">No Password Sharing Required</span>
+                <h1 class="hero-title" data-en="Grow Your Social Media Presence Exponentially" data-cn="指数级增长您的社交媒体影响力">Grow Your Social Media Presence Exponentially</h1>
+                <p class="hero-subtitle" data-en="Our tools and methods help you increase exposure, gain targeted followers, and attract business opportunities - all without sharing your account credentials." data-cn="我们的工具和方法帮助您增加曝光、获得精准粉丝并吸引商业机会 - 完全无需共享您的账户凭证。">Our tools and methods help you increase exposure, gain targeted followers, and attract business opportunities - all without sharing your account credentials.</p>
+            </div>
+            
+            <div class="hero-content">
+                <div class="hero-left">
+                    <div class="platforms">
+                        <div class="platform">
+                            <div class="platform-logo tiktok">
+                                <i class="fab fa-tiktok"></i>
+                            </div>
+                            <div class="platform-name">TikTok</div>
+                        </div>
+                        <div class="platform">
+                            <div class="platform-logo facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                            <div class="platform-name">Facebook</div>
+                        </div>
+                        <div class="platform">
+                            <div class="platform-logo instagram">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div class="platform-name">Instagram</div>
+                        </div>
+                        <div class="platform">
+                            <div class="platform-logo twitter">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                            <div class="platform-name">Twitter</div>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-highlight">
+                        <h3 data-en="What You'll Achieve:" data-cn="您将获得：">What You'll Achieve:</h3>
+                        <ul>
+                            <li><i class="fas fa-chart-line"></i> <span data-en="3-5x More Exposure & Visibility" data-cn="3-5倍更多曝光与可见度">3-5x More Exposure & Visibility</span></li>
+                            <li><i class="fas fa-users"></i> <span data-en="Targeted Followers Who Actually Engage" data-cn="精准粉丝，真实互动">Targeted Followers Who Actually Engage</span></li>
+                            <li><i class="fas fa-user-plus"></i> <span data-en="Increased Followers & Subscribers" data-cn="增加粉丝与订阅者">Increased Followers & Subscribers</span></li>
+                            <li><i class="fas fa-briefcase"></i> <span data-en="More Business Opportunities & Clients" data-cn="更多商业机会与客户">More Business Opportunities & Clients</span></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">3-5x</span>
+                            <span class="stat-label" data-en="More Exposure" data-cn="更多曝光">More Exposure</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">7-30 Days</span>
+                            <span class="stat-label" data-en="To See Results" data-cn="见效时间">To See Results</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">94%</span>
+                            <span class="stat-label" data-en="Success Rate" data-cn="成功率">Success Rate</span>
+                        </div>
+                    </div>
+                    
+                    <div class="cta-buttons">
+                        <button class="btn btn-primary" data-en="Get Free Audit" data-cn="免费获取账户分析">Get Free Audit</button>
+                        <button class="btn btn-secondary" data-en="View Case Studies" data-cn="查看成功案例">View Case Studies</button>
+                    </div>
+                </div>
+                
+                <div class="hero-right">
+                    <div class="floating-card floating">
+                        <h3 class="form-title" data-en="Get Your Free Growth Audit" data-cn="获取免费增长分析">Get Your Free Growth Audit</h3>
+                        <form id="audit-form">
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Name" data-en-placeholder="Your Name" data-cn-placeholder="您的姓名" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Email Address" data-en-placeholder="Email Address" data-cn-placeholder="电子邮箱" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="@username" data-en-placeholder="@username" data-cn-placeholder="@用户名" required>
+                            </div>
+                            <div class="form-group">
+                                <select data-en-placeholder="Primary Platform" data-cn-placeholder="主要平台">
+                                    <option value="" data-en="Primary Platform" data-cn="主要平台">Primary Platform</option>
+                                    <option value="tiktok" data-en="TikTok" data-cn="TikTok">TikTok</option>
+                                    <option value="facebook" data-en="Facebook" data-cn="Facebook">Facebook</option>
+                                    <option value="instagram" data-en="Instagram" data-cn="Instagram">Instagram</option>
+                                    <option value="twitter" data-en="Twitter" data-cn="Twitter">Twitter</option>
+                                    <option value="other" data-en="Other" data-cn="其他">Other</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;" data-en="Get Free Audit" data-cn="免费获取分析">Get Free Audit</button>
+                        </form>
+                        <div class="guarantee">
+                            <i class="fas fa-shield-alt"></i>
+                            <span data-en="No password sharing required - 100% secure" data-cn="无需共享密码 - 100%安全保障">No password sharing required - 100% secure</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+    <!-- Platform Features Section -->
+    <section class="platform-features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge" data-en="Platform-Specific Strategies" data-cn="平台专属策略">Platform-Specific Strategies</span>
+                <h2 class="section-title" data-en="Optimized Growth for Each Platform" data-cn="为每个平台优化的增长策略">Optimized Growth for Each Platform</h2>
+                <p class="section-subtitle" data-en="We tailor our approach to leverage the unique algorithms and features of each platform" data-cn="我们定制化方法，充分利用每个平台的独特算法和功能">We tailor our approach to leverage the unique algorithms and features of each platform</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-logo tiktok">
+                        <i class="fab fa-tiktok"></i>
+                    </div>
+                    <h3 class="feature-title" data-en="TikTok Growth" data-cn="TikTok增长">TikTok Growth</h3>
+                    <p class="feature-description" data-en="Master the For You Page algorithm, create viral content, and build an engaged community." data-cn="掌握推荐页算法，创作爆款内容，建立活跃社区。">Master the For You Page algorithm, create viral content, and build an engaged community.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-logo facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <h3 class="feature-title" data-en="Facebook Growth" data-cn="Facebook增长">Facebook Growth</h3>
+                    <p class="feature-description" data-en="Optimize for News Feed visibility, engage communities, and leverage Facebook Groups." data-cn="优化信息流可见度，活跃社区互动，善用Facebook群组。">Optimize for News Feed visibility, engage communities, and leverage Facebook Groups.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-logo instagram">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3 class="feature-title" data-en="Instagram Growth" data-cn="Instagram增长">Instagram Growth</h3>
+                    <p class="feature-description" data-en="Maximize Reels potential, grow with Stories, and build a visually compelling profile." data-cn="最大化Reels潜力，通过Stories增长，打造视觉吸引力强的个人主页。">Maximize Reels potential, grow with Stories, and build a visually compelling profile.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-logo twitter">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <h3 class="feature-title" data-en="Twitter Growth" data-cn="Twitter增长">Twitter Growth</h3>
+                    <p class="feature-description" data-en="Master trending topics, engage in conversations, and build thought leadership." data-cn="掌握热门话题，参与对话交流，建立思想领导力。">Master trending topics, engage in conversations, and build thought leadership.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge" data-en="Opportunities" data-cn="增长机遇">Opportunities</span>
+                <h2 class="section-title" data-en="What Better Social Metrics Can Bring You" data-cn="更好的社交媒体指标能为您带来什么">What Better Social Metrics Can Bring You</h2>
+                <p class="section-subtitle" data-en="Improved social media performance opens doors to numerous opportunities" data-cn="提升社交媒体表现将为您打开众多机遇之门">Improved social media performance opens doors to numerous opportunities</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="benefit-title" data-en="Talent Scouts & Agencies" data-cn="星探与经纪公司">Talent Scouts & Agencies</h3>
+                    <p class="benefit-description" data-en="Get noticed by talent scouts, modeling agencies, and brand representatives looking for influencers with strong engagement metrics." data-cn="获得星探、模特经纪公司和品牌代表的关注，他们正在寻找具有强大互动指标的影响者。">Get noticed by talent scouts, modeling agencies, and brand representatives looking for influencers with strong engagement metrics.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-broadcast-tower"></i>
+                    </div>
+                    <h3 class="benefit-title" data-en="Platform Algorithm Boost" data-cn="平台算法助推">Platform Algorithm Boost</h3>
+                    <p class="benefit-description" data-en="Social platforms automatically promote accounts with strong performance metrics, giving you more organic reach without extra effort." data-cn="社交媒体平台会自动推广表现优异的账户，让您无需额外努力即可获得更多有机覆盖。">Social platforms automatically promote accounts with strong performance metrics, giving you more organic reach without extra effort.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="benefit-title" data-en="Brand Collaborations" data-cn="品牌合作">Brand Collaborations</h3>
+                    <p class="benefit-description" data-en="Attract sponsorship deals and paid partnerships with brands looking to reach your engaged audience." data-cn="吸引寻求接触您活跃受众的品牌提供赞助和付费合作机会。">Attract sponsorship deals and paid partnerships with brands looking to reach your engaged audience.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3 class="benefit-title" data-en="Increased Sales & Business" data-cn="增加销售与业务">Increased Sales & Business</h3>
+                    <p class="benefit-description" data-en="Convert your engaged followers into customers, clients, or subscribers for your products, services, or content." data-cn="将您的活跃粉丝转化为您产品、服务或内容的客户、顾客或订阅者。">Convert your engaged followers into customers, clients, or subscribers for your products, services, or content.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge" data-en="Simple Process" data-cn="简单流程">Simple Process</span>
+                <h2 class="section-title" data-en="How It Works - No Password Sharing" data-cn="工作原理 - 无需共享密码">How It Works - No Password Sharing</h2>
+                <p class="section-subtitle" data-en="Our approach is simple, secure, and effective - all you need is your phone" data-cn="我们的方法简单、安全且高效 - 您只需要一部手机">Our approach is simple, secure, and effective - all you need is your phone</p>
+            </div>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title" data-en="Get Our Tools" data-cn="获取工具">Get Our Tools</h3>
+                    <p class="step-description" data-en="Receive access to our proprietary analysis tools that work without requiring your account passwords." data-cn="获取我们专有分析工具的访问权限，无需提供账户密码即可使用。">Receive access to our proprietary analysis tools that work without requiring your account passwords.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title" data-en="Follow Our Methods" data-cn="遵循方法">Follow Our Methods</h3>
+                    <p class="step-description" data-en="Implement our tailored strategies using just your phone - no technical expertise required." data-cn="仅使用手机即可实施我们量身定制的策略 - 无需技术专业知识。">Implement our tailored strategies using just your phone - no technical expertise required.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title" data-en="See Results" data-cn="见证成果">See Results</h3>
+                    <p class="step-description" data-en="Watch your exposure, followers, and engagement grow as you apply our proven techniques." data-cn="应用我们经过验证的技术，见证您的曝光、粉丝和互动不断增长。">Watch your exposure, followers, and engagement grow as you apply our proven techniques.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+    <!-- Security Section -->
+    <section class="security">
+        <div class="container">
+            <div class="security-icon">
+                <i class="fas fa-lock"></i>
+            </div>
+            <h2 class="security-title" data-en="Your Account Security Is Our Priority" data-cn="您的账户安全是我们的首要任务">Your Account Security Is Our Priority</h2>
+            <p class="security-description" data-en="We've developed our tools and methods to work without requiring your account passwords or sensitive information. You maintain full control of your accounts while benefiting from our expertise." data-cn="我们开发的工具和方法无需您的账户密码或敏感信息即可工作。在受益于我们专业知识的同时，您完全掌控自己的账户。">We've developed our tools and methods to work without requiring your account passwords or sensitive information. You maintain full control of your accounts while benefiting from our expertise.</p>
+            <button class="btn btn-primary" data-en="Learn About Our Security Approach" data-cn="了解我们的安全方法">Learn About Our Security Approach</button>
+        </div>
+    </section>
+
+    <!-- Methods Section -->
+    <section id="methods">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge" data-en="Our Methodology" data-cn="我们的方法论">Our Methodology</span>
+                <h2 class="section-title" data-en="Proven Framework for Sustainable Growth" data-cn="经过验证的可持续增长框架">Proven Framework for Sustainable Growth</h2>
+                <p class="section-subtitle" data-en="We focus on three core pillars that drive algorithm-friendly content and audience engagement" data-cn="我们专注于三个核心支柱，推动算法友好的内容和受众互动">We focus on three core pillars that drive algorithm-friendly content and audience engagement</p>
+            </div>
+            
+            <div class="methods-grid">
+                <div class="method-card">
+                    <div class="method-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="method-title" data-en="Algorithm Optimization" data-cn="算法优化">Algorithm Optimization</h3>
+                    <p class="method-description" data-en="Understand and leverage platform-specific signals to maximize your content visibility and reach." data-cn="理解并利用平台特定信号，最大化您内容的可见度和覆盖范围。">Understand and leverage platform-specific signals to maximize your content visibility and reach.</p>
+                    <ul class="method-features">
+                        <li><i class="fas fa-check"></i> <span data-en="Platform signal analysis" data-cn="平台信号分析">Platform signal analysis</span></li>
+                        <li><i class="fas fa-check"></i> <span data-en="Content engagement triggers" data-cn="内容互动触发器">Content engagement triggers</span></li>
+                        <li><i class="fas fa-check"></i> <span data-en="Algorithm-friendly formatting" data-cn="算法友好格式">Algorithm-friendly formatting</span></li>
+                    </ul>
+                </div>
+                
+                <div class="method-card">
+                    <div class="method-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="method-title" data-en="Audience Targeting" data-cn="受众定位">Audience Targeting</h3>
+                    <p class="method-description" data-en="Attract followers who are genuinely interested in your content, products, or services." data-cn="吸引真正对您的内容、产品或服务感兴趣的粉丝。">Attract followers who are genuinely interested in your content, products, or services.</p>
+                    <ul class="method-features">
+                        <li><i class="fas fa-check"></i> <span data-en="Interest-based segmentation" data-cn="基于兴趣的细分">Interest-based segmentation</span></li>
+                        <li><i class="fas fa-check"></i> <span data-en="Lookalike audience expansion" data-cn="相似受众扩展">Lookalike audience expansion</span></li>
+                        <li><i class="fas fa-check"></i> <span data-en="Content-audience alignment" data-cn="内容与受众对齐">Content-audience alignment</span></li>
+                    </ul>
+                </div>
+                
+                <div class="method-card">
+                    <div class="method-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="method-title" data-en="Content Distribution" data-cn="内容分发">Content Distribution</h3>
+                    <p class="method-description" data-en="Maximize your content exposure through strategic timing and cross-platform optimization." data-cn="通过战略性时机和跨平台优化，最大化您的内容曝光。">Maximize your content exposure through strategic timing and cross-platform optimization.</p>
+                    <ul class="method-features">
+                        <li><i class="fas fa-check"></i> <span data-en="Optimal posting schedules" data-cn="最佳发布时间">Optimal posting schedules</span></li>
+                        <li><i class="fas fa-check"></i> <span data-en="Cross-platform adaptation" data-cn="跨平台适配">Cross-platform adaptation</span></li>
+                        <li><i class="fas fa-check"></i> <span data-en="Growth hacking techniques" data-cn="增长黑客技术">Growth hacking techniques</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="results">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge" data-en="Real Results" data-cn="真实成果">Real Results</span>
+                <h2 class="section-title" data-en="Success Stories from Our Clients" data-cn="客户成功案例">Success Stories from Our Clients</h2>
+                <p class="section-subtitle" data-en="See how our strategies have transformed social media presence for creators and businesses" data-cn="了解我们的策略如何为创作者和企业改变社交媒体影响力">See how our strategies have transformed social media presence for creators and businesses</p>
+            </div>
+            
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-avatar">
+                        <i class="fab fa-tiktok"></i>
+                    </div>
+                    <h4 class="result-name">Tech Insights</h4>
+                    <p class="result-role" data-en="Tech Content Creator" data-cn="科技内容创作者">Tech Content Creator</p>
+                    <p class="result-text" data-en="After implementing the algorithm optimization strategies, my video views increased from 2,000 to 15,000 on average, gaining 8,000+ followers in 30 days." data-cn="实施算法优化策略后，我的视频平均观看量从2,000增加到15,000，30天内获得了8,000多名粉丝。">After implementing the algorithm optimization strategies, my video views increased from 2,000 to 15,000 on average, gaining 8,000+ followers in 30 days.</p>
+                    <div class="result-stats">
+                        <div class="result-stat">
+                            <div class="result-number">2K</div>
+                            <div class="result-label" data-en="Before" data-cn="之前">Before</div>
+                        </div>
+                        <div class="result-stat">
+                            <div class="result-number">15K</div>
+                            <div class="result-label" data-en="After" data-cn="之后">After</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="result-card">
+                    <div class="result-avatar">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h4 class="result-name">Fit Coach</h4>
+                    <p class="result-role" data-en="Fitness Influencer" data-cn="健身影响者">Fitness Influencer</p>
+                    <p class="result-text" data-en="The audience targeting techniques helped me connect with genuinely interested followers. My engagement rate tripled, leading to more client inquiries." data-cn="受众定位技术帮助我与真正感兴趣的粉丝建立联系。我的互动率增加了两倍，带来了更多客户咨询。">The audience targeting techniques helped me connect with genuinely interested followers. My engagement rate tripled, leading to more client inquiries.</p>
+                    <div class="result-stats">
+                        <div class="result-stat">
+                            <div class="result-number">2.1%</div>
+                            <div class="result-label" data-en="Engagement" data-cn="互动率">Engagement</div>
+                        </div>
+                        <div class="result-stat">
+                            <div class="result-number">8.4%</div>
+                            <div class="result-label" data-en="Now" data-cn="现在">Now</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="result-card">
+                    <div class="result-avatar">
+                        <i class="fab fa-facebook"></i>
+                    </div>
+                    <h4 class="result-name">Local Eats</h4>
+                    <p class="result-role" data-en="Restaurant Business" data-cn="餐厅业务">Restaurant Business</p>
+                    <p class="result-text" data-en="Content distribution strategies helped us reach more local customers. We saw a 40% increase in foot traffic and doubled our online orders." data-cn="内容分发策略帮助我们触达更多本地客户。我们的客流量增加了40%，在线订单翻了一番。">Content distribution strategies helped us reach more local customers. We saw a 40% increase in foot traffic and doubled our online orders.</p>
+                    <div class="result-stats">
+                        <div class="result-stat">
+                            <div class="result-number">+40%</div>
+                            <div class="result-label" data-en="Foot Traffic" data-cn="客流量">Foot Traffic</div>
+                        </div>
+                        <div class="result-stat">
+                            <div class="result-number">+100%</div>
+                            <div class="result-label" data-en="Online Orders" data-cn="在线订单">Online Orders</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge" data-en="Testimonials" data-cn="用户评价">Testimonials</span>
+                <h2 class="section-title" data-en="What Our Clients Say" data-cn="客户评价">What Our Clients Say</h2>
+                <p class="section-subtitle" data-en="Hear from creators and businesses who transformed their social media presence" data-cn="听听那些改变了社交媒体影响力的创作者和企业的声音">Hear from creators and businesses who transformed their social media presence</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content" data-en="I tried many 'growth hacks' before, but nothing delivered lasting results. SocialGrowth Academy's approach is different - they teach you how algorithms actually work. Now I can consistently create high-exposure content." data-cn="我之前尝试过很多'增长技巧'，但都没有带来持久效果。SocialGrowth Academy的方法不同 - 他们教你算法实际如何工作。现在我可以持续创作高曝光内容。">I tried many 'growth hacks' before, but nothing delivered lasting results. SocialGrowth Academy's approach is different - they teach you how algorithms actually work. Now I can consistently create high-exposure content.</div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h4>Alex Johnson</h4>
+                            <p data-en="Content Creator" data-cn="内容创作者">Content Creator</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content" data-en="As a small business owner, I don't have much time for social media. Their strategies are practical and efficient. I spend just a few hours weekly but see significant brand exposure and qualified leads." data-cn="作为小企业主，我没有太多时间用于社交媒体。他们的策略实用且高效。我每周只花几个小时，但看到了显著的品牌曝光和合格潜在客户。">As a small business owner, I don't have much time for social media. Their strategies are practical and efficient. I spend just a few hours weekly but see significant brand exposure and qualified leads.</div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h4>Maria Rodriguez</h4>
+                            <p data-en="Small Business Owner" data-cn="小企业主">Small Business Owner</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content" data-en="What I appreciate most is their compliance-focused approach. Unlike other courses that teach risky tactics, all their methods are platform-approved. My account grew from 1K to 25K followers in 3 months safely." data-cn="我最欣赏的是他们以合规为重点的方法。与其他教授风险策略的课程不同，他们的所有方法都得到平台批准。我的账户在3个月内安全地从1K增长到25K粉丝。">What I appreciate most is their compliance-focused approach. Unlike other courses that teach risky tactics, all their methods are platform-approved. My account grew from 1K to 25K followers in 3 months safely.</div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h4>James Wilson</h4>
+                            <p data-en="Personal Brand Builder" data-cn="个人品牌建设者">Personal Brand Builder</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content" data-en="The mentorship was incredibly insightful. They pinpointed exactly what was holding back my account. After implementing their recommendations, one of my videos hit 500K+ views for the first time." data-cn="导师指导非常有见地。他们准确指出了阻碍我账户发展的因素。实施他们的建议后，我的一个视频首次达到了50万+观看量。">The mentorship was incredibly insightful. They pinpointed exactly what was holding back my account. After implementing their recommendations, one of my videos hit 500K+ views for the first time.</div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h4>Sarah Chen</h4>
+                            <p data-en="Education Creator" data-cn="教育内容创作者">Education Creator</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="cta-section">
+        <div class="container">
+            <h2 class="cta-title" data-en="Ready to Transform Your Social Presence?" data-cn="准备好改变您的社交媒体影响力了吗？">Ready to Transform Your Social Presence?</h2>
+            <p class="cta-subtitle" data-en="Book a free consultation with our growth experts. We'll analyze your account and provide personalized strategy recommendations." data-cn="与我们的增长专家预约免费咨询。我们将分析您的账户并提供个性化策略建议。">Book a free consultation with our growth experts. We'll analyze your account and provide personalized strategy recommendations.</p>
+            <div class="cta-buttons">
+                <button class="btn btn-light" data-en="Book Free Consultation" data-cn="预约免费咨询">Book Free Consultation</button>
+                <button class="btn btn-secondary" data-en="Download Case Studies" data-cn="下载案例研究">Download Case Studies</button>
+            </div>
+            <p style="margin-top: 20px; color: rgba(255, 255, 255, 0.7); font-size: 14px;" data-en="Limited time: First 20 consultations include a free account audit report" data-cn="限时优惠：前20名咨询者将获得免费账户分析报告">Limited time: First 20 consultations include a free account audit report</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">SocialGrowth</div>
+                    <p class="footer-about" data-en="Professional social media growth strategies that deliver sustainable results. We help creators and businesses unlock platform algorithms to increase exposure, followers, and qualified leads." data-cn="专业的社交媒体增长策略，提供可持续成果。我们帮助创作者和企业解锁平台算法，增加曝光、粉丝和合格潜在客户。">Professional social media growth strategies that deliver sustainable results. We help creators and businesses unlock platform algorithms to increase exposure, followers, and qualified leads.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links-container">
+                    <h4 class="footer-heading" data-en="Quick Links" data-cn="快速链接">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#benefits" data-en="Benefits" data-cn="核心优势">Benefits</a></li>
+                        <li><a href="#methods" data-en="Our Methods" data-cn="方法策略">Our Methods</a></li>
+                        <li><a href="#results" data-en="Case Studies" data-cn="成功案例">Case Studies</a></li>
+                        <li><a href="#contact" data-en="Consultation" data-cn="咨询">Consultation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links-container">
+                    <h4 class="footer-heading" data-en="Resources" data-cn="资源">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacy.html" data-en="Privacy Policy" data-cn="隐私政策">Privacy Policy</a></li>
+                        <li><a href="userterms.html" data-en="User Guides" data-cn="用户需知">User Guides</a></li>
+                        <li><a href="aboutus.html" data-en="About Us" data-cn="关于我们">About Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links-container">
+                    <h4 class="footer-heading" data-en="Contact" data-cn="联系我们">Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:support@bmx7.top">support@bmx7.top</a></li>
+                        <li><a href="tel:+11234567890">+1 (123) 456-7890</a></li>
+                        <li data-en="New York, NY" data-cn="纽约">New York, NY</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 SocialGrowth Academy. <span data-en="All rights reserved." data-cn="保留所有权利。">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for success and popup -->
+    <div class="modal" id="success-modal">
+        <div class="modal-content">
+            <div class="modal-icon">
+                <i class="fas fa-gift"></i>
+            </div>
+            <h3 class="modal-title" data-en="Congratulations!" data-cn="恭喜您！">Congratulations!</h3>
+            <p class="modal-text" data-en="You have successfully submitted. Click the button now to immediately experience our 10% traffic growth service for free." data-cn="您已成功提交。现在立即点击按钮免费体验我们10%流量增长服务。">You have successfully submitted. Click the button now to immediately experience our 10% traffic growth service for free.</p>
+            <div class="modal-buttons">
+                <button class="btn btn-primary" id="whatsapp-btn" data-en="Claim Free Service" data-cn="领取免费服务">Claim Free Service</button>
+                <button class="btn btn-secondary" id="close-modal" data-en="Maybe Later" data-cn="稍后再说">Maybe Later</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Language management
+        let currentLang = 'en';
+        const formSubmitted = false;
+        let popupTimer;
+
+        // Detect user language preference
+        function detectUserLanguage() {
+            // Check browser language
+            const browserLang = navigator.language || navigator.userLanguage;
+            if (browserLang.startsWith('zh')) {
+                return 'cn';
+            }
+            
+            // In a real implementation, you would also check IP location here
+            // For demo purposes, we'll use browser language only
+            
+            return 'en';
+        }
+
+        // Switch language
+        function switchLanguage(lang) {
+            currentLang = lang;
+            
+            // Update all elements with data attributes
+            document.querySelectorAll('[data-en], [data-cn]').forEach(element => {
+                if (element.hasAttribute(`data-${lang}`)) {
+                    const text = element.getAttribute(`data-${lang}`);
+                    if (element.tagName === 'INPUT' || element.tagName === 'SELECT') {
+                        element.setAttribute('placeholder', text);
+                    } else if (element.tagName === 'OPTION') {
+                        element.textContent = text;
+                    } else {
+                        element.textContent = text;
+                    }
+                }
+            });
+            
+            // Update current language indicator
+            document.getElementById('current-lang').textContent = lang === 'en' ? 'EN' : '中文';
+            
+            // Update active language option
+            document.querySelectorAll('.lang-option').forEach(option => {
+                if (option.getAttribute('data-lang') === lang) {
+                    option.classList.add('active');
+                } else {
+                    option.classList.remove('active');
+                }
+            });
+            
+            // Update form select placeholder
+            const select = document.querySelector('select');
+            if (select) {
+                const placeholderOption = select.querySelector('option[value=""]');
+                if (placeholderOption) {
+                    placeholderOption.textContent = placeholderOption.getAttribute(`data-${lang}`);
+                }
+            }
+            
+            // Store language preference
+            localStorage.setItem('preferredLang', lang);
+        }
+
+        // Initialize language based on detection
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check for stored preference first
+            const storedLang = localStorage.getItem('preferredLang');
+            if (storedLang) {
+                currentLang = storedLang;
+            } else {
+                // Auto-detect language
+                currentLang = detectUserLanguage();
+            }
+            
+            // Apply language
+            switchLanguage(currentLang);
+            
+            // Language switcher functionality
+            document.querySelector('.lang-btn').addEventListener('click', function() {
+                document.querySelector('.lang-options').classList.toggle('show');
+            });
+            
+            document.querySelectorAll('.lang-option').forEach(option => {
+                option.addEventListener('click', function() {
+                    const lang = this.getAttribute('data-lang');
+                    switchLanguage(lang);
+                    document.querySelector('.lang-options').classList.remove('show');
+                });
+            });
+            
+            // Close language dropdown when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('.lang-switcher')) {
+                    document.querySelector('.lang-options').classList.remove('show');
+                }
+            });
+
+            // Form submission
+            document.getElementById('audit-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                formSubmitted = true;
+                
+                // Show success modal
+                document.getElementById('success-modal').classList.add('show');
+            });
+            
+            // Modal functionality
+            document.getElementById('close-modal').addEventListener('click', function() {
+                document.getElementById('success-modal').classList.remove('show');
+            });
+            
+            document.getElementById('whatsapp-btn').addEventListener('click', function() {
+                // Redirect to WhatsApp
+                const message = currentLang === 'en' 
+                    ? "Hello! I'd like to claim my free 10% traffic growth service." 
+                    : "您好！我想领取免费的10%流量增长服务。";
+                const encodedMessage = encodeURIComponent(message);
+                window.open(`https://wa.me/1234567890?text=${encodedMessage}`, '_blank');
+                
+                // Close modal
+                document.getElementById('success-modal').classList.remove('show');
+            });
+            
+            // Close modal when clicking outside
+            document.getElementById('success-modal').addEventListener('click', function(e) {
+                if (e.target === this) {
+                    this.classList.remove('show');
+                }
+            });
+            
+            // Set timer for popup after 1 minute
+            popupTimer = setTimeout(function() {
+                if (!formSubmitted) {
+                    document.getElementById('success-modal').classList.add('show');
+                }
+            }, 60000); // 1 minute
+            
+            // Scroll animations
+            const fadeElems = document.querySelectorAll('.method-card, .result-card, .testimonial-card, .benefit-card, .feature');
+            
+            const fadeInOnScroll = function() {
+                for (let i = 0; i < fadeElems.length; i++) {
+                    const elem = fadeElems[i];
+                    const distInView = elem.getBoundingClientRect().top - window.innerHeight + 100;
+                    if (distInView < 0) {
+                        elem.style.opacity = 1;
+                        elem.style.transform = 'translateY(0)';
+                    }
+                }
+            };
+            
+            // Initialize element states
+            for (let i = 0; i < fadeElems.length; i++) {
+                fadeElems[i].style.opacity = 0;
+                fadeElems[i].style.transform = 'translateY(20px)';
+                fadeElems[i].style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            }
+            
+            window.addEventListener('scroll', fadeInOnScroll);
+            fadeInOnScroll();
+            
+            // Button click handlers
+            document.querySelectorAll('.btn-primary, .btn-light').forEach(btn => {
+                if (!btn.id) { // Exclude modal buttons
+                    btn.addEventListener('click', function() {
+                        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
