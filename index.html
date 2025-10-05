@@ -39,8 +39,8 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <div class="logo-icon">SG</div>
-                    <div class="logo-text">SocialGrowth</div>
+                    <div class="logo-icon">BMX</div>
+                    <div class="logo-text">Growth</div>
                 </div>
                 <nav>
                     <ul>
@@ -796,16 +796,22 @@
             
             // 移动端悬浮按钮显示逻辑
             function handleScroll() {
-                const scrollPosition = window.scrollY;
-                const windowHeight = window.innerHeight;
-                const documentHeight = document.documentElement.scrollHeight;
-                
-                if (scrollPosition + windowHeight >= documentHeight - 100) {
+                // 只要页面有滚动，就显示悬浮按钮
+                if (window.scrollY > 100) {
                     document.getElementById('mobileFloatingCTA').classList.add('show');
                 } else {
                     document.getElementById('mobileFloatingCTA').classList.remove('show');
                 }
             }
+
+            document.addEventListener('DOMContentLoaded', function() {
+                // 在移动设备上立即显示悬浮按钮
+                if (window.innerWidth < 768) {
+                    setTimeout(() => {
+                        document.getElementById('mobileFloatingCTA').classList.add('show');
+                    }, 1000); // 延迟1秒显示，让页面先加载完成
+                }
+            });
             
             window.addEventListener('scroll', handleScroll);
             
