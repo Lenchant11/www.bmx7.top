@@ -34,13 +34,13 @@
   </script>
   <style>
     :root{
-      --bg:#0c1220;
+      --bg:#0a0f1c;
       --card:#152136;
       --muted:#a8b1bd;
       --text:#e9ecf0;
       --white:#ffffff;
-      --primary:#4a6cfa;
-      --primary-600:#3a5be8;
+      --primary:#3a5be8;
+      --primary-600:#2a4bd6;
       --primary-300:#6c89ff;
       --accent:#ff7b2e;
       --secondary:#8c61ff;
@@ -50,13 +50,13 @@
     }
 
     *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:#090e19;color:var(--text);font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;line-height:1.4; font-size: 15px;}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;line-height:1.4; font-size: 15px;}
     img{max-width:100%;display:block}
     a{color:var(--text);text-decoration:none}
     a:hover{text-decoration:underline}
     .container{width:min(1120px,92%);margin-inline:auto}
 
-    .nav{position:sticky;top:0;z-index:50;background:rgba(9,14,25,.95);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.08)}
+    .nav{position:sticky;top:0;z-index:50;background:rgba(10,15,28,.95);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.08)}
     .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
     .brand{font-weight:800;letter-spacing:.3px;font-size:1.2rem;color: var(--primary-300);}
     .nav-links{display:flex;gap:16px;align-items:center}
@@ -76,24 +76,25 @@
     
     .hero{position:relative;padding:30px 0 30px; overflow: hidden;}
     .hero-top{text-align:center;margin-bottom:30px;}
-    .urgency-badge{display:inline-block;background:linear-gradient(90deg, var(--accent), #ff5252);color:white;padding:6px 16px;border-radius:20px;font-size:0.85rem;font-weight:600;margin-bottom:16px;box-shadow:0 4px 12px rgba(255,123,46,0.3);}
-    .hero-copy h1{font-size:42px;margin:0 0 10px; line-height: 1.2; font-weight: 800;background:linear-gradient(90deg, var(--primary), var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
-    .subtitle{color:var(--muted);max-width:60ch;margin:0 auto 14px; font-size: 1.1rem;}
+    .urgency-badge{display:inline-block;background:linear-gradient(90deg, var(--accent), #ff5252);color:white;padding:8px 20px;border-radius:20px;font-size:0.9rem;font-weight:600;margin-bottom:20px;box-shadow:0 4px 12px rgba(255,123,46,0.3);animation: pulse 2s infinite;}
+    .hero-copy h1{font-size:48px;margin:0 0 15px; line-height: 1.2; font-weight: 800;background:linear-gradient(90deg, var(--primary), var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-shadow: 0 2px 10px rgba(0,0,0,0.2);}
+    .subtitle{color:var(--muted);max-width:70ch;margin:0 auto 20px; font-size: 1.2rem; line-height: 1.6;}
     
-    .hero-grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:32px;align-items:stretch}
-    .hero-points{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:10px;color:#cfd5dd; font-weight: 500;}
-    .hero-points li {display: flex; align-items: center; gap: 8px; font-size: 0.95rem; background: rgba(255,255,255,0.05); padding: 12px 16px; border-radius: 10px; border-left: 3px solid var(--accent);}
-    .hero-points li:before {content: "✓"; color: var(--accent); font-weight: bold;}
+    .hero-grid{display:grid;grid-template-columns:0.75fr 1.25fr;gap:40px;align-items:stretch}
+    .hero-points{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:12px;color:#cfd5dd; font-weight: 500;}
+    .hero-points li {display: flex; align-items: center; gap: 12px; font-size: 1rem; background: rgba(255,255,255,0.05); padding: 15px 20px; border-radius: 12px; border-left: 4px solid var(--accent); box-shadow: 0 4px 12px rgba(0,0,0,0.1);}
+    .hero-points li:before {content: "✓"; color: var(--accent); font-weight: bold; font-size: 1.1rem;}
     
     .hero-bg{position:absolute;inset:0;z-index:-1;background:
-        linear-gradient(180deg,rgba(12,18,32,.85),rgba(12,18,32,.95)),
+        linear-gradient(180deg,rgba(10,15,28,.85),rgba(10,15,28,.95)),
         url('https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80') center/cover no-repeat;}
 
-    .logos{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px; align-items: center; justify-content: center;}
+    .logos{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px; align-items: center; justify-content: center;}
     .logo{font-size:13px;padding:8px 14px;border:1px dashed rgba(255,255,255,.15);border-radius:10px;color:#cfd5dd;background:rgba(255,255,255,.03); transition: var(--transition);}
     .logo:hover {transform: translateY(-2px); border-color: var(--primary); color: var(--white);}
 
-    .form-card{background:linear-gradient(135deg, #1a1a1a, #2a1a0a);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius);padding:20px; box-shadow: 0 16px 32px rgba(0,0,0,0.2); position: relative; width: 100%;}
+    /* 表单样式 - 完全重写 */
+    .form-card{background:linear-gradient(135deg, #2a1a0a, #3a2814);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius);padding:20px; box-shadow: 0 16px 32px rgba(0,0,0,0.3); position: relative; width: 100%;}
     .form-card:before {
         content: "";
         position: absolute;
@@ -104,15 +105,16 @@
         background: linear-gradient(90deg, var(--primary), var(--accent));
         border-radius: var(--radius) var(--radius) 0 0;
     }
-    .form-title{margin:0 0 8px; font-size: 22px;}
-    .form-note{color:var(--muted);margin:0 0 14px;font-size:0.92rem; line-height: 1.5;}
+    .form-title{margin:0 0 8px; font-size: 22px; text-align: center; color: #ffd8b8;}
+    .form-note{color:#d4b99c;margin:0 0 14px;font-size:0.92rem; line-height: 1.5; text-align: center;}
     .field{margin-bottom:10px; position: relative;}
     .field.check{display:flex;align-items:flex-start; gap: 8px;}
     .field.check label {margin-bottom: 0; display: inline; font-weight: normal;}
-    label{display:block;margin-bottom:4px;font-weight:600; font-size: 0.92rem;}
+    label{display:block;margin-bottom:4px;font-weight:600; font-size: 0.92rem; color: #ffd8b8;}
     .req{color:var(--accent)}
-    input,select{width:100%;background:#0f1729;color:var(--text);border:1px solid rgba(255,255,255,.15);border-radius:10px;padding:10px 12px;outline:none; font-family: inherit; font-size: 0.95rem; transition: var(--transition);}
-    input:focus,select:focus{box-shadow:var(--ring);border-color:var(--primary); transform: translateY(-1px);}
+    input,select{width:100%;background:#1a1208;color:#ffd8b8;border:1px solid rgba(255,255,255,.15);border-radius:10px;padding:10px 12px;outline:none; font-family: inherit; font-size: 0.95rem; transition: var(--transition);}
+    input:focus,select:focus{box-shadow:0 0 0 3px rgba(255,123,46,0.25);border-color:var(--accent); transform: translateY(-1px); background: #2a1a0a;}
+    input::placeholder{color:#b8a58c;}
     .form-status{margin-top:14px;font-size:0.92rem; padding: 10px; border-radius: 8px; background: rgba(25, 195, 125, 0.1); border: 1px solid rgba(25, 195, 125, 0.2);}
     .form-status.success{color:#59d38c}
     .form-status.error{color:#ff8b8b; background: rgba(255, 139, 139, 0.1); border-color: rgba(255, 139, 139, 0.2);}
@@ -125,7 +127,7 @@
     .radio-option input[type="radio"] {width: auto; margin: 0;}
     
     .phone-input-group {display: flex;}
-    .country-code {flex: 0 0 auto; background: rgba(255,255,255,0.05); padding: 10px 12px; border: 1px solid rgba(255,255,255,.15); border-right: none; border-radius: 10px 0 0 10px; display: flex; align-items: center;}
+    .country-code {flex: 0 0 auto; background: rgba(255,255,255,0.05); padding: 10px 12px; border: 1px solid rgba(255,255,255,.15); border-right: none; border-radius: 10px 0 0 10px; display: flex; align-items: center; color: #ffd8b8;}
     .phone-input {border-radius: 0 10px 10px 0; flex: 1;}
     
     /* Honeypot field */
@@ -162,13 +164,15 @@
     .form-modal .form-card {
       box-shadow: none;
       padding: 0;
-      background: linear-gradient(135deg, #1a1a1a, #2a1a0a);
+      background: linear-gradient(135deg, #2a1a0a, #3a2814);
     }
     .form-modal .form-title {
       font-size: 20px;
+      color: #ffd8b8;
     }
     .form-modal .form-note {
       font-size: 0.9rem;
+      color: #d4b99c;
     }
 
     .section{padding:60px 0}
@@ -191,8 +195,8 @@
         inset: 0;
         background: linear-gradient(135deg, rgba(74,108,250,0.1), rgba(255,123,46,0.1));
     }
-    .media-pt{background-image:url('https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'); background-size: cover; background-position: center;}
-    .media-ft{background-image:url('https://images.unsplash.com/photo-1551836026-d5c8cbf90be5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'); background-size: cover; background-position: center;}
+    .media-pt{background-image:url('https://images.unsplash.com/photo-1551836026-d5c8cbf90be5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'); background-size: cover; background-position: center;}
+    .media-ft{background-image:url('https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'); background-size: cover; background-position: center;}
     .card-body h3{margin:14px 0 10px; font-size: 1.3rem;}
     
     .earnings-badge {background: var(--accent); color: var(--bg); padding: 3px 10px; border-radius: 18px; font-weight: 700; font-size: 0.86rem; display: inline-block; margin-bottom: 10px;}
@@ -264,13 +268,14 @@
     /* Bank image in hero */
     .bank-image {
         position: absolute;
-        bottom: 20px;
-        right: 20px;
-        width: 120px;
-        height: 80px;
+        bottom: 40px;
+        right: 40px;
+        width: 180px;
+        height: 120px;
         background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/State_Bank_of_India_logo.svg/1200px-State_Bank_of_India_logo.svg.png') center/contain no-repeat;
-        opacity: 0.2;
-        z-index: 1;
+        opacity: 0.6;
+        z-index: 2;
+        filter: brightness(1.8);
     }
     
     /* Animation */
@@ -311,6 +316,13 @@
       h2 {font-size: 28px;}
       .section {padding: 50px 0;}
       .section-header {margin-bottom: 32px;}
+      .bank-image {
+        bottom: 20px;
+        right: 20px;
+        width: 120px;
+        height: 80px;
+        opacity: 0.4;
+      }
     }
     
     @media (max-width: 640px) {
@@ -332,6 +344,9 @@
       .stats li {padding: 12px;}
       .benefits-media {height: 200px;}
       .radio-group {flex-direction: column; gap: 10px;}
+      .bank-image {
+        display: none;
+      }
       
       /* Form Modal Mobile Adjustments */
       .form-modal .modal-content {
@@ -379,9 +394,9 @@
   <!-- Top Nav -->
   <header class="nav">
     <div class="container nav-inner">
-      <a class="brand" href="#top" aria-label="Home">RemoteEarn India</a>
+      <a class="brand" href="#top" aria-label="Home">WorkFromHome India</a>
       <nav class="nav-links">
-        <a href="#roles" class="nav-link">Earning Options</a>
+        <a href="#roles" class="nav-link">Job Types</a>
         <a href="#benefits" class="nav-link">Benefits</a>
         <a href="#faq" class="nav-link">FAQ</a>
         <a href="#" class="btn btn-primary" id="applyNowBtn">Apply Now</a>
@@ -396,9 +411,12 @@
       <div class="hero-copy">
         <h1>Earn ₹1,500+ Daily From Your Phone!</h1>
         <p class="subtitle">
-          Join India's #1 online part-time job platform! Work from home, cafes, or anywhere with internet. 
-          <strong>Zero experience needed</strong> - we provide full training. Complete simple tasks like product testing, 
-          customer support, and data entry. Start earning real money within 24 hours!
+          <strong>India's #1 Online Part-Time Job Platform!</strong> Work from home, cafes, or anywhere with internet. 
+          Complete simple tasks like product testing, customer support, and data entry. 
+          <strong>Zero experience needed</strong> - we provide full training. Start earning real money within 24 hours!
+        </p>
+        <p class="subtitle" style="font-size: 1rem; color: var(--accent);">
+          <strong>Small one-time service fee ensures genuine opportunities - 100% refundable after completing first 5 tasks!</strong>
         </p>
       </div>
     </div>
@@ -842,6 +860,7 @@
   </footer>
 
   <script>
+    // JavaScript部分保持不变
     document.addEventListener('DOMContentLoaded', function() {
       const form = document.getElementById('applicationForm');
       const modalForm = document.getElementById('modalApplicationForm');
