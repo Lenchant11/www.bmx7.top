@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy | WorkFromHome India</title>
+  <meta name="description" content="Privacy Policy for WorkFromHome India - Learn how we collect, use, and protect your personal information." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f8f9fa;
+      --card:#ffffff;
+      --muted:#6c757d;
+      --text:#212529;
+      --white:#ffffff;
+      --primary:#ff6b35;
+      --primary-600:#e55a2b;
+      --primary-300:#ff8c5a;
+      --accent:#28a745;
+      --secondary:#17a2b8;
+      --ring: 0 0 0 3px rgba(255, 107, 53, 0.25);
+      --radius:12px;
+      --transition: all 0.3s ease;
+    }
+
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;line-height:1.6; font-size: 15px;}
+    img{max-width:100%;display:block}
+    a{color:var(--text);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{width:min(1120px,92%);margin-inline:auto}
+
+    .nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid rgba(0,0,0,.08);box-shadow: 0 2px 10px rgba(0,0,0,0.05);}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+    .brand{font-weight:800;letter-spacing:.3px;font-size:1.2rem;color: var(--primary);}
+    .nav-links{display:flex;gap:16px;align-items:center}
+    .nav-link{opacity:.85; transition: var(--transition); font-size: 0.95rem;}
+    .nav-link:hover{opacity:1; color: var(--primary);}
+
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 20px;border-radius:10px;border:0;font-weight:600;cursor:pointer;transition:var(--transition); font-size: 0.95rem;}
+    .btn-lg{padding:12px 28px;font-size:1.05rem;}
+    .btn-block{width:100%}
+    .btn-primary{background:var(--primary);color:#ffffff; box-shadow: 0 4px 10px rgba(255, 107, 53, 0.25);}
+    .btn-primary:hover{background:var(--primary-600); transform: translateY(-2px); box-shadow: 0 6px 14px rgba(255, 107, 53, 0.35);}
+    .btn-secondary{background:var(--accent);color:#ffffff; box-shadow: 0 4px 10px rgba(40, 167, 69, 0.25);}
+    .btn-secondary:hover{background:#218838; transform: translateY(-2px); box-shadow: 0 6px 14px rgba(40, 167, 69, 0.35);}
+    .btn-outline{background:transparent;border:1px solid var(--muted);color:var(--text);}
+    .btn-outline:hover{background:rgba(0,0,0,0.05); border-color: var(--primary);}
+    .btn:focus{outline:none;box-shadow:var(--ring)}
+    
+    .hero{position:relative;padding:60px 0 40px; overflow: hidden; text-align: center;}
+    .hero-bg{position:absolute;inset:0;z-index:-1;background:
+        linear-gradient(135deg, rgba(255,255,255,0.9), rgba(255,255,255,0.7)),
+        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%23ff6b35" opacity="0.05"/><path d="M30,30 L70,30 L70,70 L30,70 Z" fill="%2328a745" opacity="0.05"/><circle cx="50" cy="50" r="20" fill="%2317a2b8" opacity="0.05"/></svg>');}
+    .hero h1{font-size:42px;margin:0 0 15px; line-height: 1.2; font-weight: 800;background:linear-gradient(90deg, var(--primary), var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-shadow: 0 2px 10px rgba(0,0,0,0.1);}
+    .hero p{color:var(--muted);max-width:70ch;margin:0 auto; font-size: 1.1rem; line-height: 1.6;}
+    
+    .content-section{padding:60px 0}
+    .content-section.alt{background:#e9ecef}
+    h2{margin:0 0 14px;font-size:32px; font-weight: 800;}
+    h3{margin:30px 0 15px;font-size:24px; font-weight: 700; color: var(--primary);}
+    h4{margin:25px 0 10px;font-size:18px; font-weight: 600;}
+    .muted{color:var(--muted); line-height: 1.5;}
+    .small{font-size:0.88rem}
+    
+    .card{background:var(--card);border:1px solid rgba(0,0,0,.08);border-radius:var(--radius);padding:30px; transition: var(--transition); box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-bottom: 30px;}
+    .card:hover {transform: translateY(-3px); border-color: rgba(0,0,0,0.15); box-shadow: 0 8px 24px rgba(0,0,0,0.1);}
+    
+    .info-box{background:linear-gradient(135deg, #fff5f0, #fff);border:1px solid rgba(255,107,53,.2);border-radius:var(--radius);padding:20px; margin: 20px 0; position: relative;}
+    .info-box:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, var(--primary), var(--accent));
+        border-radius: var(--radius) var(--radius) 0 0;
+    }
+    
+    .list{padding-left:0;margin:20px 0;display:grid;gap:10px}
+    .list li{margin-left:0; display: flex; align-items: flex-start; gap: 10px; font-size: 0.95rem;}
+    .list li:before {content: "•"; color: var(--primary); font-weight: bold; flex-shrink: 0;}
+    
+    .footer{border-top:1px solid rgba(0,0,0,.08);padding:32px 0 20px;background:#f8f9fa}
+    .footer-grid{display:flex;justify-content:space-between;gap:18px;align-items:flex-start; margin-bottom: 20px;}
+    .footer-links{display:flex;gap:16px;flex-wrap:wrap}
+    
+    .security-badge {display: flex; align-items: center; gap: 8px; margin-top: 14px; padding: 10px; background: rgba(25, 195, 125, 0.1); border-radius: 8px; font-size: 0.86rem;}
+    .security-badge svg {flex-shrink: 0; width: 18px; height: 18px;}
+    
+    /* Animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .fade-in {
+      animation: fadeIn 0.5s ease forwards;
+    }
+    
+    .delay-1 { animation-delay: 0.15s; }
+    .delay-2 { animation-delay: 0.3s; }
+    .delay-3 { animation-delay: 0.45s; }
+    
+    /* Mobile responsiveness */
+    @media (max-width: 980px){
+      .hero h1 {font-size: 32px;}
+      h2 {font-size: 28px;}
+      h3 {font-size: 22px;}
+      .content-section {padding: 50px 0;}
+    }
+    
+    @media (max-width: 640px) {
+      .nav-links {gap: 10px;}
+      .btn {padding: 9px 16px; font-size: 0.92rem;}
+      .btn-lg {padding: 10px 22px;}
+      .footer-grid {flex-direction: column; gap: 20px;}
+      .footer-links {flex-direction: column; gap: 10px;}
+      .hero {padding: 50px 0 30px;}
+      .hero h1 {font-size: 28px;}
+      h2 {font-size: 26px;}
+      h3 {font-size: 20px;}
+      .content-section {padding: 40px 0;}
+      .card {padding: 20px;}
+    }
+    
+    @media (max-width: 480px) {
+      .hero h1 {font-size: 26px;}
+      h2 {font-size: 24px;}
+      h3 {font-size: 19px;}
+      .brand {font-size: 1.1rem;}
+      .nav-link {font-size: 0.9rem;}
+      .btn {font-size: 0.9rem;}
+    }
+  </style>
+</head>
+<body>
+  <!-- Top Nav -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="Home">WorkFromHome India</a>
+      <nav class="nav-links">
+        <a href="index.html#roles" class="nav-link">Job Types</a>
+        <a href="index.html#benefits" class="nav-link">Benefits</a>
+        <a href="index.html#faq" class="nav-link">FAQ</a>
+        <a href="index.html#apply" class="btn btn-primary">Apply Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <h1 class="fade-in">Privacy Policy</h1>
+      <p class="fade-in delay-1">Your privacy is important to us. Learn how we collect, use, and protect your personal information.</p>
+    </div>
+  </section>
+
+  <!-- Privacy Content -->
+  <section class="content-section">
+    <div class="container">
+      <div class="card fade-in">
+        <h2>Our Commitment to Your Privacy</h2>
+        <p class="muted">At WorkFromHome India, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, and safeguard your data when you use our services.</p>
+        
+        <div class="info-box fade-in delay-1">
+          <h3>Quick Summary</h3>
+          <p>We collect only necessary information to provide you with job opportunities. Your data is secure and never sold to third parties. You have control over your information at all times.</p>
+        </div>
+        
+        <h3>Information We Collect</h3>
+        <p>We collect information that you provide directly to us when you:</p>
+        <ul class="list">
+          <li>Register for an account on our platform</li>
+          <li>Complete job applications and forms</li>
+          <li>Communicate with our support team via Telegram</li>
+          <li>Participate in surveys or provide feedback</li>
+        </ul>
+        
+        <h4>Personal Information</h4>
+        <p>This may include:</p>
+        <ul class="list">
+          <li>Full name and contact details</li>
+          <li>Email address and phone number</li>
+          <li>Demographic information (age, gender)</li>
+          <li>Payment and banking information for payouts</li>
+          <li>Work preferences and availability</li>
+        </ul>
+        
+        <h4>Automatically Collected Information</h4>
+        <p>When you visit our website, we may automatically collect:</p>
+        <ul class="list">
+          <li>IP address and device information</li>
+          <li>Browser type and version</li>
+          <li>Pages visited and time spent on site</li>
+          <li>Referring website information</li>
+        </ul>
+        
+        <h3>How We Use Your Information</h3>
+        <p>We use the information we collect to:</p>
+        <ul class="list">
+          <li>Match you with suitable job opportunities</li>
+          <li>Process your applications and manage your account</li>
+          <li>Communicate with you about available jobs and updates</li>
+          <li>Process payments and send earnings to your account</li>
+          <li>Improve our services and user experience</li>
+          <li>Ensure compliance with our terms and conditions</li>
+        </ul>
+        
+        <h3>Information Sharing and Disclosure</h3>
+        <p>We do not sell, trade, or rent your personal information to third parties. We may share your information only in the following circumstances:</p>
+        <ul class="list">
+          <li><strong>With Your Consent:</strong> When you explicitly agree to share information with potential employers</li>
+          <li><strong>Service Providers:</strong> With trusted partners who help us operate our platform (payment processors, hosting services)</li>
+          <li><strong>Legal Requirements:</strong> When required by law or to protect our rights and safety</li>
+          <li><strong>Business Transfers:</strong> In connection with a merger, acquisition, or sale of assets</li>
+        </ul>
+        
+        <h3>Data Security</h3>
+        <p>We implement appropriate security measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction. These measures include:</p>
+        <ul class="list">
+          <li>Encryption of sensitive data during transmission</li>
+          <li>Secure servers with restricted access</li>
+          <li>Regular security assessments and updates</li>
+          <li>Employee training on data protection</li>
+        </ul>
+        
+        <div class="security-badge fade-in">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 22C12 22 20 18 20 12V5L12 2L4 5V12C4 18 12 22 12 22Z" stroke="#19c37d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M9 12L11 14L15 10" stroke="#19c37d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>Your information is protected with industry-standard security measures</span>
+        </div>
+        
+        <h3>Your Rights and Choices</h3>
+        <p>You have the following rights regarding your personal information:</p>
+        <ul class="list">
+          <li><strong>Access:</strong> You can request a copy of the personal information we hold about you</li>
+          <li><strong>Correction:</strong> You can update or correct your information at any time</li>
+          <li><strong>Deletion:</strong> You can request deletion of your personal information, subject to legal requirements</li>
+          <li><strong>Opt-out:</strong> You can opt out of marketing communications at any time</li>
+          <li><strong>Data Portability:</strong> You can request your data in a machine-readable format</li>
+        </ul>
+        
+        <h3>Cookies and Tracking Technologies</h3>
+        <p>We use cookies and similar technologies to enhance your experience on our website. Cookies help us:</p>
+        <ul class="list">
+          <li>Remember your preferences and settings</li>
+          <li>Understand how you use our website</li>
+          <li>Provide personalized content and job recommendations</li>
+          <li>Analyze website traffic and performance</li>
+        </ul>
+        <p>You can control cookie settings through your browser preferences. However, disabling cookies may affect your experience on our website.</p>
+        
+        <h3>Third-Party Links</h3>
+        <p>Our website may contain links to third-party websites or services. This Privacy Policy applies only to our services. We are not responsible for the privacy practices of other websites. We encourage you to read the privacy policies of any third-party sites you visit.</p>
+        
+        <h3>Data Retention</h3>
+        <p>We retain your personal information only for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required or permitted by law. When we no longer need your information, we will securely delete or anonymize it.</p>
+        
+        <h3>International Data Transfers</h3>
+        <p>Your information may be transferred to and processed in countries other than your own. These countries may have different data protection laws. When we transfer your information internationally, we ensure appropriate safeguards are in place to protect your data.</p>
+        
+        <h3>Changes to This Privacy Policy</h3>
+        <p>We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. We will notify you of any material changes by posting the updated policy on our website with a new effective date. We encourage you to review this policy periodically.</p>
+        
+        <h3>Contact Us</h3>
+        <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
+        <ul class="list">
+          <li><strong>Email:</strong> support@bmx7.top</li>
+          <li><strong>Telegram:</strong> @WorkFromHomeIndiaSupport</li>
+          <li><strong>Address:</strong> Data Protection Officer, WorkFromHome India, Mumbai, India</li>
+        </ul>
+        
+        <p class="muted small" style="margin-top: 30px;">Last updated: January 2023</p>
+      </div>
+      
+      <div class="card fade-in delay-1">
+        <h3>Need Help With Your Privacy?</h3>
+        <p>If you have any concerns about your privacy or how we handle your data, our support team is here to help.</p>
+        <a href="index.html#apply" class="btn btn-primary">Contact Support</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="index.html">WorkFromHome India</a>
+        <p class="muted small">Genuine online part-time opportunities. No guaranteed income. Small service fee applies.</p>
+      </div>
+      <nav class="footer-links">
+        <a href="privacy.html" rel="nofollow">Privacy Policy</a>
+        <a href="userterms.html" rel="nofollow">User Terms</a>
+        <a href="index.html#faq" rel="nofollow">FAQ</a>
+      </nav>
+    </div>
+    <div class="container">
+      <p class="muted small">© 2023 WorkFromHome India. All rights reserved. Earnings shown are examples only and not guarantees. Your actual earnings depend on your skills, time, and task availability.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Add smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+          
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            targetElement.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+      
+      // Add fade-in animation when elements come into view
+      const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+      };
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+      
+      document.querySelectorAll('.fade-in').forEach(el => {
+        observer.observe(el);
+      });
+    });
+  </script>
+</body>
+</html>
