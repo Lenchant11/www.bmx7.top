@@ -90,9 +90,31 @@
         url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%23ff6b35" opacity="0.05"/><path d="M30,30 L70,30 L70,70 L30,70 Z" fill="%2328a745" opacity="0.05"/><circle cx="50" cy="50" r="20" fill="%2317a2b8" opacity="0.05"/></svg>'),
         url('https://images.unsplash.com/photo-1551836026-d5c8cbf90be5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80') center/cover no-repeat;}
 
-    .logos{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px; align-items: center; justify-content: center;}
-    .logo{font-size:13px;padding:8px 14px;border:1px dashed rgba(0,0,0,.15);border-radius:10px;color:#6c757d;background:rgba(0,0,0,.03); transition: var(--transition);}
-    .logo:hover {transform: translateY(-2px); border-color: var(--primary); color: var(--primary);}
+    /* Hero illustration styles */
+    .hero-illustration {
+      width: 100%;
+      height: 180px;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-top: 20px;
+      background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+      position: relative;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    
+    .hero-illustration img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .fee-note {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: var(--muted);
+      font-style: italic;
+    }
 
     /* 表单样式 - 完全重写 */
     .form-card{background:linear-gradient(135deg, #fff5f0, #fff);border:1px solid rgba(255,107,53,.2);border-radius:var(--radius);padding:20px; box-shadow: 0 16px 32px rgba(0,0,0,0.1); position: relative; width: 100%;}
@@ -224,7 +246,7 @@
         position: absolute;
         inset: 0;
         background: url('https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80') center/cover no-repeat;
-        opacity: 0.4;
+        opacity: 0.8;
         mix-blend-mode: overlay;
     }
     .stats{list-style:none;padding:0;margin:0 0 14px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
@@ -338,7 +360,6 @@
       h2 {font-size: 26px;}
       .section {padding: 40px 0;}
       .cta {padding: 50px 0;}
-      .logos {justify-content: center;}
       .form-card {padding: 20px;}
       .card {padding: 18px;}
       .testimonial {padding: 18px;}
@@ -347,6 +368,11 @@
       .radio-group {flex-direction: column; gap: 10px;}
       .bank-image {
         display: none;
+      }
+      
+      /* Hero illustration mobile adjustments */
+      .hero-illustration {
+        height: 150px;
       }
       
       /* Form Modal Mobile Adjustments */
@@ -375,6 +401,11 @@
       .btn {font-size: 0.9rem;}
       .hero-points li {font-size: 0.9rem;}
       .subtitle {font-size: 1rem;}
+      
+      /* Hero illustration mobile adjustments */
+      .hero-illustration {
+        height: 120px;
+      }
       
       /* Form Modal Mobile Adjustments */
       .form-modal .form-title {
@@ -498,14 +529,11 @@
       </aside>
 
       <div class="hero-right fade-in">
-        <!-- credibility logos -->
-        <div class="logos" aria-label="Brands">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" class="logo" style="padding: 8px; height: 30px;">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Flipkart_logo.svg" alt="Flipkart" class="logo" style="padding: 8px; height: 30px;">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Myntra_logo.svg" alt="Myntra" class="logo" style="padding: 8px; height: 30px;">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Swiggy_logo.svg" alt="Swiggy" class="logo" style="padding: 8px; height: 30px;">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Zomato_logo.svg" alt="Zomato" class="logo" style="padding: 8px; height: 30px;">
+        <!-- Hero illustration -->
+        <div class="hero-illustration">
+          <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80" alt="Indian professional working from home">
         </div>
+        <p class="fee-note">部分工作机会需要支付少量服务费</p>
 
         <ul class="hero-points">
           <li>💰 <strong>High Earnings:</strong> Earn ₹500-₹3,000 daily based on tasks</li>
