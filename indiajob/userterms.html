@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>User Terms | WorkFromHome India</title>
+  <meta name="description" content="User Terms and Conditions for WorkFromHome India - Understand your rights and responsibilities when using our platform." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f8f9fa;
+      --card:#ffffff;
+      --muted:#6c757d;
+      --text:#212529;
+      --white:#ffffff;
+      --primary:#ff6b35;
+      --primary-600:#e55a2b;
+      --primary-300:#ff8c5a;
+      --accent:#28a745;
+      --secondary:#17a2b8;
+      --ring: 0 0 0 3px rgba(255, 107, 53, 0.25);
+      --radius:12px;
+      --transition: all 0.3s ease;
+    }
+
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;line-height:1.6; font-size: 15px;}
+    img{max-width:100%;display:block}
+    a{color:var(--text);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{width:min(1120px,92%);margin-inline:auto}
+
+    .nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid rgba(0,0,0,.08);box-shadow: 0 2px 10px rgba(0,0,0,0.05);}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+    .brand{font-weight:800;letter-spacing:.3px;font-size:1.2rem;color: var(--primary);}
+    .nav-links{display:flex;gap:16px;align-items:center}
+    .nav-link{opacity:.85; transition: var(--transition); font-size: 0.95rem;}
+    .nav-link:hover{opacity:1; color: var(--primary);}
+
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 20px;border-radius:10px;border:0;font-weight:600;cursor:pointer;transition:var(--transition); font-size: 0.95rem;}
+    .btn-lg{padding:12px 28px;font-size:1.05rem;}
+    .btn-block{width:100%}
+    .btn-primary{background:var(--primary);color:#ffffff; box-shadow: 0 4px 10px rgba(255, 107, 53, 0.25);}
+    .btn-primary:hover{background:var(--primary-600); transform: translateY(-2px); box-shadow: 0 6px 14px rgba(255, 107, 53, 0.35);}
+    .btn-secondary{background:var(--accent);color:#ffffff; box-shadow: 0 4px 10px rgba(40, 167, 69, 0.25);}
+    .btn-secondary:hover{background:#218838; transform: translateY(-2px); box-shadow: 0 6px 14px rgba(40, 167, 69, 0.35);}
+    .btn-outline{background:transparent;border:1px solid var(--muted);color:var(--text);}
+    .btn-outline:hover{background:rgba(0,0,0,0.05); border-color: var(--primary);}
+    .btn:focus{outline:none;box-shadow:var(--ring)}
+    
+    .hero{position:relative;padding:60px 0 40px; overflow: hidden; text-align: center;}
+    .hero-bg{position:absolute;inset:0;z-index:-1;background:
+        linear-gradient(135deg, rgba(255,255,255,0.9), rgba(255,255,255,0.7)),
+        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%23ff6b35" opacity="0.05"/><path d="M30,30 L70,30 L70,70 L30,70 Z" fill="%2328a745" opacity="0.05"/><circle cx="50" cy="50" r="20" fill="%2317a2b8" opacity="0.05"/></svg>');}
+    .hero h1{font-size:42px;margin:0 0 15px; line-height: 1.2; font-weight: 800;background:linear-gradient(90deg, var(--primary), var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-shadow: 0 2px 10px rgba(0,0,0,0.1);}
+    .hero p{color:var(--muted);max-width:70ch;margin:0 auto; font-size: 1.1rem; line-height: 1.6;}
+    
+    .content-section{padding:60px 0}
+    .content-section.alt{background:#e9ecef}
+    h2{margin:0 0 14px;font-size:32px; font-weight: 800;}
+    h3{margin:30px 0 15px;font-size:24px; font-weight: 700; color: var(--primary);}
+    h4{margin:25px 0 10px;font-size:18px; font-weight: 600;}
+    .muted{color:var(--muted); line-height: 1.5;}
+    .small{font-size:0.88rem}
+    
+    .card{background:var(--card);border:1px solid rgba(0,0,0,.08);border-radius:var(--radius);padding:30px; transition: var(--transition); box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-bottom: 30px;}
+    .card:hover {transform: translateY(-3px); border-color: rgba(0,0,0,0.15); box-shadow: 0 8px 24px rgba(0,0,0,0.1);}
+    
+    .info-box{background:linear-gradient(135deg, #fff5f0, #fff);border:1px solid rgba(255,107,53,.2);border-radius:var(--radius);padding:20px; margin: 20px 0; position: relative;}
+    .info-box:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, var(--primary), var(--accent));
+        border-radius: var(--radius) var(--radius) 0 0;
+    }
+    
+    .warning-box{background:linear-gradient(135deg, #fff0f0, #fff);border:1px solid rgba(220,53,69,.2);border-radius:var(--radius);padding:20px; margin: 20px 0; position: relative;}
+    .warning-box:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, #dc3545, #e55a2b);
+        border-radius: var(--radius) var(--radius) 0 0;
+    }
+    
+    .list{padding-left:0;margin:20px 0;display:grid;gap:10px}
+    .list li{margin-left:0; display: flex; align-items: flex-start; gap: 10px; font-size: 0.95rem;}
+    .list li:before {content: "•"; color: var(--primary); font-weight: bold; flex-shrink: 0;}
+    
+    .numbered-list{padding-left:0;margin:20px 0;display:grid;gap:12px;counter-reset: item;}
+    .numbered-list li{margin-left:0; display: flex; align-items: flex-start; gap: 12px; font-size: 0.95rem; counter-increment: item;}
+    .numbered-list li:before {content: counter(item) "."; color: var(--primary); font-weight: bold; flex-shrink: 0;}
+    
+    .footer{border-top:1px solid rgba(0,0,0,.08);padding:32px 0 20px;background:#f8f9fa}
+    .footer-grid{display:flex;justify-content:space-between;gap:18px;align-items:flex-start; margin-bottom: 20px;}
+    .footer-links{display:flex;gap:16px;flex-wrap:wrap}
+    
+    .security-badge {display: flex; align-items: center; gap: 8px; margin-top: 14px; padding: 10px; background: rgba(25, 195, 125, 0.1); border-radius: 8px; font-size: 0.86rem;}
+    .security-badge svg {flex-shrink: 0; width: 18px; height: 18px;}
+    
+    /* Animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .fade-in {
+      animation: fadeIn 0.5s ease forwards;
+    }
+    
+    .delay-1 { animation-delay: 0.15s; }
+    .delay-2 { animation-delay: 0.3s; }
+    .delay-3 { animation-delay: 0.45s; }
+    
+    /* Mobile responsiveness */
+    @media (max-width: 980px){
+      .hero h1 {font-size: 32px;}
+      h2 {font-size: 28px;}
+      h3 {font-size: 22px;}
+      .content-section {padding: 50px 0;}
+    }
+    
+    @media (max-width: 640px) {
+      .nav-links {gap: 10px;}
+      .btn {padding: 9px 16px; font-size: 0.92rem;}
+      .btn-lg {padding: 10px 22px;}
+      .footer-grid {flex-direction: column; gap: 20px;}
+      .footer-links {flex-direction: column; gap: 10px;}
+      .hero {padding: 50px 0 30px;}
+      .hero h1 {font-size: 28px;}
+      h2 {font-size: 26px;}
+      h3 {font-size: 20px;}
+      .content-section {padding: 40px 0;}
+      .card {padding: 20px;}
+    }
+    
+    @media (max-width: 480px) {
+      .hero h1 {font-size: 26px;}
+      h2 {font-size: 24px;}
+      h3 {font-size: 19px;}
+      .brand {font-size: 1.1rem;}
+      .nav-link {font-size: 0.9rem;}
+      .btn {font-size: 0.9rem;}
+    }
+  </style>
+</head>
+<body>
+  <!-- Top Nav -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="Home">WorkFromHome India</a>
+      <nav class="nav-links">
+        <a href="index.html#roles" class="nav-link">Job Types</a>
+        <a href="index.html#benefits" class="nav-link">Benefits</a>
+        <a href="index.html#faq" class="nav-link">FAQ</a>
+        <a href="index.html#apply" class="btn btn-primary">Apply Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <h1 class="fade-in">User Terms & Conditions</h1>
+      <p class="fade-in delay-1">Please read these terms carefully before using our platform. By registering, you agree to be bound by these terms.</p>
+    </div>
+  </section>
+
+  <!-- Terms Content -->
+  <section class="content-section">
+    <div class="container">
+      <div class="card fade-in">
+        <h2>Agreement to Terms</h2>
+        <p class="muted">By accessing or using the WorkFromHome India platform, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, you may not use our services.</p>
+        
+        <div class="info-box fade-in delay-1">
+          <h3>Important Notice</h3>
+          <p>These terms govern your use of our platform. We recommend reading them thoroughly as they contain important information about your rights, responsibilities, and the service fee structure.</p>
+        </div>
+        
+        <h3>1. Eligibility Requirements</h3>
+        <p>To use our platform, you must meet the following requirements:</p>
+        <ul class="list">
+          <li>Be at least 18 years of age</li>
+          <li>Reside in India with valid identification</li>
+          <li>Have access to a smartphone with internet connection</li>
+          <li>Possess basic digital literacy skills</li>
+          <li>Agree to our service fee structure</li>
+          <li>Provide accurate and complete registration information</li>
+        </ul>
+        
+        <h3>2. Account Registration and Security</h3>
+        <h4>2.1 Account Creation</h4>
+        <p>You must register for an account to access job opportunities. During registration, you agree to:</p>
+        <ul class="list">
+          <li>Provide accurate, current, and complete information</li>
+          <li>Maintain and promptly update your information</li>
+          <li>Maintain the security of your account credentials</li>
+          <li>Accept responsibility for all activities under your account</li>
+          <li>Notify us immediately of any unauthorized use</li>
+        </ul>
+        
+        <h4>2.2 Account Suspension</h4>
+        <p>We reserve the right to suspend or terminate accounts that:</p>
+        <ul class="list">
+          <li>Provide false or misleading information</li>
+          <li>Violate these terms and conditions</li>
+          <li>Engage in fraudulent activities</li>
+          <li>Create multiple accounts for the same individual</li>
+          <li>Share account access with others</li>
+        </ul>
+        
+        <h3>3. Service Fees and Payment Terms</h3>
+        <h4>3.1 Service Fee Structure</h4>
+        <p>Our platform operates with the following fee structure:</p>
+        <ul class="list">
+          <li><strong>One-time Registration Fee:</strong> A small service fee is required to access genuine job opportunities</li>
+          <li><strong>Refund Policy:</strong> Service fee is 100% refundable after successful completion of first 5 tasks</li>
+          <li><strong>Payment Processing:</strong> All payments are processed through secure payment gateways</li>
+        </ul>
+        
+        <h4>3.2 Earnings and Payouts</h4>
+        <p>Earnings on our platform are subject to:</p>
+        <ul class="list">
+          <li>Task completion and quality standards</li>
+          <li>Daily payout processing after quality checks</li>
+          <li>Direct bank transfer within 24 hours of task approval</li>
+          <li>Applicable tax deductions as per Indian law</li>
+        </ul>
+        
+        <div class="warning-box fade-in">
+          <h4>Important: No Income Guarantee</h4>
+          <p>Earnings shown on our platform are examples only and not guarantees. Your actual earnings depend on your skills, time commitment, task availability, and quality of work. We do not guarantee any specific income level.</p>
+        </div>
+        
+        <h3>4. User Responsibilities</h3>
+        <p>As a user of our platform, you agree to:</p>
+        <ol class="numbered-list">
+          <li><strong>Professional Conduct:</strong> Maintain professional behavior in all communications</li>
+          <li><strong>Task Completion:</strong> Complete assigned tasks according to instructions and deadlines</li>
+          <li><strong>Quality Standards:</strong> Maintain high quality standards in all work submitted</li>
+          <li><strong>Communication:</strong> Respond promptly to platform communications via Telegram</li>
+          <li><strong>Compliance:</strong> Follow all platform guidelines and instructions</li>
+        </ol>
+        
+        <h3>5. Prohibited Activities</h3>
+        <p>You may not use our platform to:</p>
+        <ul class="list">
+          <li>Engage in any illegal or fraudulent activities</li>
+          <li>Submit false or misleading information</li>
+          <li>Share confidential platform information</li>
+          <li>Circumvent platform security measures</li>
+          <li>Harass other users or platform staff</li>
+          <li>Use automated tools or bots</li>
+          <li>Attempt to access other users' accounts</li>
+          <li>Spread malware or viruses</li>
+        </ul>
+        
+        <h3>6. Intellectual Property</h3>
+        <h4>6.1 Platform Content</h4>
+        <p>All content on our platform, including text, graphics, logos, and software, is owned by WorkFromHome India and protected by intellectual property laws.</p>
+        
+        <h4>6.2 User Content</h4>
+        <p>By submitting content to our platform, you grant us a license to use, modify, and display that content for platform operations.</p>
+        
+        <h3>7. Termination</h3>
+        <p>Either party may terminate this agreement:</p>
+        <ul class="list">
+          <li><strong>By User:</strong> You may deactivate your account at any time</li>
+          <li><strong>By Platform:</strong> We may suspend or terminate accounts for violations of these terms</li>
+          <li><strong>Effect of Termination:</strong> Upon termination, your right to use the platform ceases immediately</li>
+        </ul>
+        
+        <h3>8. Limitation of Liability</h3>
+        <p>To the maximum extent permitted by law, WorkFromHome India shall not be liable for:</p>
+        <ul class="list">
+          <li>Any indirect, incidental, or consequential damages</li>
+          <li>Loss of profits or business opportunities</li>
+          <li>Service interruptions or technical issues</li>
+          <li>User errors or omissions</li>
+          <li>Third-party actions or content</li>
+        </ul>
+        
+        <h3>9. Dispute Resolution</h3>
+        <h4>9.1 Governing Law</h4>
+        <p>These terms shall be governed by and construed in accordance with the laws of India.</p>
+        
+        <h4>9.2 Dispute Process</h4>
+        <p>Any disputes shall be resolved through:</p>
+        <ol class="numbered-list">
+          <li>Informal negotiation between parties</li>
+          <li>Mediation if informal resolution fails</li>
+          <li>Legal proceedings in courts of Mumbai, India</li>
+        </ol>
+        
+        <h3>10. Modifications to Terms</h3>
+        <p>We reserve the right to modify these terms at any time. We will notify users of material changes through:</p>
+        <ul class="list">
+          <li>Platform notifications</li>
+          <li>Email communications</li>
+          <li>Updated posting on our website</li>
+        </ul>
+        <p>Continued use of the platform after changes constitutes acceptance of modified terms.</p>
+        
+        <h3>11. Communication Policy</h3>
+        <p>Our primary communication channels are:</p>
+        <ul class="list">
+          <li><strong>Telegram:</strong> For job assignments and support</li>
+          <li><strong>Email:</strong> For official notifications and updates</li>
+          <li><strong>Platform Notifications:</strong> For important announcements</li>
+        </ul>
+        <p>You are responsible for maintaining updated contact information and checking communications regularly.</p>
+        
+        <h3>12. Service Availability</h3>
+        <p>We strive to maintain platform availability but do not guarantee uninterrupted service. We may:</p>
+        <ul class="list">
+          <li>Perform scheduled maintenance</li>
+          <li>Address technical issues as they arise</li>
+          <li>Modify or discontinue features</li>
+          <li>Limit access during high traffic periods</li>
+        </ul>
+        
+        <div class="security-badge fade-in">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 22C12 22 20 18 20 12V5L12 2L4 5V12C4 18 12 22 12 22Z" stroke="#19c37d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M9 12L11 14L15 10" stroke="#19c37d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>We are committed to providing a fair and transparent platform for all users</span>
+        </div>
+        
+        <h3>13. Contact Information</h3>
+        <p>For questions about these terms, please contact us:</p>
+        <ul class="list">
+          <li><strong>Email:</strong> support@bmx7.top</li>
+          <li><strong>Telegram:</strong> @WorkFromHomeIndiaSupport</li>
+          <li><strong>Address:</strong> Legal Department, WorkFromHome India, Mumbai, India</li>
+        </ul>
+        
+        <p class="muted small" style="margin-top: 30px;">Last updated: January 2023</p>
+      </div>
+      
+      <div class="card fade-in delay-1">
+        <h3>Acceptance of Terms</h3>
+        <p>By clicking "I Agree" during registration, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions.</p>
+        <div style="display: flex; gap: 15px; margin-top: 20px; flex-wrap: wrap;">
+          <a href="index.html#apply" class="btn btn-primary">Back to Registration</a>
+          <a href="privacy.html" class="btn btn-outline">View Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="index.html">WorkFromHome India</a>
+        <p class="muted small">Genuine online part-time opportunities. No guaranteed income. Small service fee applies.</p>
+      </div>
+      <nav class="footer-links">
+        <a href="privacy.html" rel="nofollow">Privacy Policy</a>
+        <a href="userterms.html" rel="nofollow">User Terms</a>
+        <a href="index.html#faq" rel="nofollow">FAQ</a>
+      </nav>
+    </div>
+    <div class="container">
+      <p class="muted small">© 2023 WorkFromHome India. All rights reserved. Earnings shown are examples only and not guarantees. Your actual earnings depend on your skills, time, and task availability.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Add smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+          
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            targetElement.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+      
+      // Add fade-in animation when elements come into view
+      const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+      };
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+      
+      document.querySelectorAll('.fade-in').forEach(el => {
+        observer.observe(el);
+      });
+    });
+  </script>
+</body>
+</html>
